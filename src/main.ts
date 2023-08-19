@@ -9,7 +9,6 @@ async function bootstrap() {
     .setTitle('Egos')
     .setDescription('The egos API description')
     .setVersion('1.0')
-    .addTag('egos')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);
