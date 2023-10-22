@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
@@ -11,10 +12,11 @@
   },
   "name": "egos-backend",
   "version": "1.0.0",
-  "main": ".eslintrc.js",
+  "main": "app.ts",
   "scripts": {
-    "start": "nodemon app.js localhost 8080",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.ts localhost 8080",
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "dev": "nodemon --watch ./src --exec \"ts-node-esm --transpileOnly app.ts\" -e ts"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,6 @@
     "url": "https://github.com/the-egos/egos-backend/issues"
   },
   "homepage": "https://github.com/the-egos/egos-backend#readme",
-  "description": ""
+  "description": "",
+  "type": "module"
 }
