@@ -1,14 +1,17 @@
 {
   "dependencies": {
+    "@types/express": "^4.17.20",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.17"
+    "typeorm": "^0.3.17",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "@types/node": "^20.8.7",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
   },
   "name": "egos-backend",
   "version": "1.0.0",
@@ -16,7 +19,7 @@
   "scripts": {
     "start": "nodemon app.ts localhost 8080",
     "test": "echo \"Error: no test specified\" && exit 1",
-     "dev": "nodemon --watch ./src --exec \"ts-node-esm --transpileOnly app.ts\" -e ts"
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' ./app.ts"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,5 @@
     "url": "https://github.com/the-egos/egos-backend/issues"
   },
   "homepage": "https://github.com/the-egos/egos-backend#readme",
-  "description": "",
-  "type": "module"
+  "description": ""
 }

@@ -20,5 +20,8 @@
   // 어디에 있는 파일을 컴파일 할 것인지
   "include": ["src//*"],
   // 컴파일에서 제외되는 파일들
-  "exclude": ["node_modules", "/*.spec.ts"]
+  "exclude": ["node_modules", "/*.spec.ts"],
+  "ts-node": {
+    "esm": true
+  }
 }
