@@ -1,13 +1,13 @@
 import 'reflect-metadata';
 import * as express from 'express';
-import { myDataSource } from './app-data-source';
+import { myDataSource } from './appDataSource';
 
 myDataSource
   .initialize()
   .then(() => {
     console.log('DataSource is initialized!!!');
   })
-  .catch(err => {
+  .catch((err:any) => {
     console.error('DataSource Error', err);
   });
 

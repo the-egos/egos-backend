@@ -1,5 +1,5 @@
 const express = require('express');
-const 
+
 /**
  * NOTE: 회원가입
  * email: 유효성 검사,
