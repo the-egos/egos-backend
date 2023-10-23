@@ -15,7 +15,7 @@ export class PhoneAuth extends BaseEntity {
   idx: Number;
 
   @Column()
-  phoneAuthNum: Number;
+  phoneAuthNum: number;
 
   @Column()
   phoneNum: Number;

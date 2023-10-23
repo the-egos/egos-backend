@@ -24,7 +24,6 @@ class Join {
     return '인증성공!!'
   }
 
-  public 
 
   public getJoin: ({ email: string, phone: number, factorNum: number }) => {
     
